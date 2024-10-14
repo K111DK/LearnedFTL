@@ -46,6 +46,12 @@ struct nvme_admin_cmd PRINT_STAT = {
     .cdw10 = FEMU_PRINT_STAT,
 };
 
+struct nvme_admin_cmd RESET_STAT = {
+    .opcode = NVME_ADM_CMD_FEMU_FLIP,
+    .nsid = 1,
+    .cdw10 = FEMU_RESET_STAT,
+};
+
 int main() {
   int fd;
   fd = open(DEVICE_PATH, O_RDWR);
