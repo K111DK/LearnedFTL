@@ -1,0 +1,9 @@
+[TEST]
+ioengine=psync
+bsrange=4k
+direct=1
+iodepth=32
+size=32G
+numjobs=1
+rw=randread
+filename=/dev/nvme0n1
