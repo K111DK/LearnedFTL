@@ -1,1 +1,0 @@
-/FTL/LearnedFTL/pc-bios/skiboot.lid
